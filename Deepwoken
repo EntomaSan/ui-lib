@@ -50,25 +50,27 @@ end
 end
 wait()
 until game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Visible == true
-wait(1)
+wait(3)
 for i,v in pairs(game.Players.LocalPlayer.PlayerGui.PAGES.MatchPage:GetDescendants()) do
 if v:IsA"ImageButton" and v.Image == "rbxassetid://17534340660" then
 VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+40, v.AbsolutePosition.Y+40, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+40, v.AbsolutePosition.Y+40, 0, false, game, 0);
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+40, v.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+40, v.AbsolutePosition.Y+40, 0, false, game, 0);
 end
 end
-wait(2)
+wait(2.5)
 local VirtualInputManager = game:GetService('VirtualInputManager')
 local C = game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Frame.FriendsOnlyHolder.FriendsOnlyButton
 VirtualInputManager:SendMouseButtonEvent(C.AbsolutePosition.X+16, C.AbsolutePosition.Y+40, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(C.AbsolutePosition.X+16, C.AbsolutePosition.Y+40, 0, false, game, 0);
-wait(1)
+wait(2)
 VirtualInputManager:SendMouseButtonEvent(500, 385, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(500, 385, 0, false, game, 0);
-wait(1.2)
+wait(2)
 VirtualInputManager:SendMouseButtonEvent(530, 435, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(530, 435, 0, false, game, 0);
-wait(1.2)
+wait(2)
 VirtualInputManager:SendMouseButtonEvent(750, 320, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(750, 320, 0, false, game, 0);
 wait()
