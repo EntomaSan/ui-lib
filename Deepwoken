@@ -169,6 +169,17 @@ end
 end
 end
 end
+for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+if v.Name == "MatchResultPage" and v:IsA"Frame" and v:FindFirstChild"Main" then
+if v.Visible == true then
+if v.Main:FindFirstChild("Options") then
+local C = v.Main.Options.BackToLobbyButton
+VirtualInputManager:SendMouseButtonEvent(C.AbsolutePosition.X+40, C.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(C.AbsolutePosition.X+40, C.AbsolutePosition.Y+40, 0, false, game, 0);
+end
+end
+end
+end
 --1st
 --GetChar
 VirtualInputManager:SendMouseButtonEvent(370, 550, 0, true, game, 0);
