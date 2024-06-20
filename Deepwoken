@@ -194,7 +194,10 @@ VirtualInputManager:SendMouseMoveEvent(vector.X, vector.Y, game)
 wait(.8)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
-wait()
+wait(.1)
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
+wait(.1)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
 wait(.6)
@@ -237,7 +240,10 @@ VirtualInputManager:SendMouseMoveEvent(vector.X, vector.Y, game)
 wait(.85)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
-wait()
+wait(.1)
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
+wait(.1)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
 wait(.6)
@@ -280,7 +286,10 @@ VirtualInputManager:SendMouseMoveEvent(vector.X, vector.Y, game)
 wait(.85)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
-wait()
+wait(.1)
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
+wait(.1)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
 wait(.6)
@@ -323,7 +332,10 @@ VirtualInputManager:SendMouseMoveEvent(vector.X, vector.Y, game)
 wait(.85)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
-wait()
+wait(.1)
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
+wait(.1)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
 wait(.6)
@@ -366,7 +378,10 @@ VirtualInputManager:SendMouseMoveEvent(vector.X, vector.Y, game)
 wait(.85)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
-wait()
+wait(.1)
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
+wait(.1)
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
 wait(.6)
