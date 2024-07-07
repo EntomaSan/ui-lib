@@ -40,6 +40,61 @@ game:GetService("CoreGui").ExperienceChat.appLayout.chatWindow.Visible = false
 else
 game:GetService("CoreGui").ExperienceChat:Remove()
 end
+wait()
+local VirtualInputManager = game:GetService('VirtualInputManager')
+game.Players.LocalPlayer.PlayerGui:WaitForChild("HUD",20)
+game.Players.LocalPlayer.PlayerGui.HUD:WaitForChild("MobileHolderRight",20)
+game.Players.LocalPlayer.PlayerGui.HUD.MobileHolderRight:WaitForChild("QuestButtonHolder",20)
+repeat wait() until game:GetService("Players").LocalPlayer.PlayerGui.HUD.MobileHolderRight.QuestButtonHolder.QuestButton:GetChildren()[4] ~= nil
+if game:GetService("Players").LocalPlayer.PlayerGui.HUD.MobileHolderRight.QuestButtonHolder.QuestButton.CompletedIndicatorLabel.Visible == true then
+VirtualInputManager:SendMouseButtonEvent(95, 85, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(95, 85 , 0, false, game, 0);
+wait(3)
+local Q = game:GetService("Players").LocalPlayer.PlayerGui.HUD.MobileHolderRight.QuestButtonHolder.QuestButton
+Q.Image = "nil"
+VirtualInputManager:SendMouseButtonEvent(Q.AbsolutePosition.X+40, Q.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(Q.AbsolutePosition.X+40, Q.AbsolutePosition.Y+40, 0, false, game, 0);
+wait(2)
+local H = game:GetService("Players").LocalPlayer.PlayerGui.PAGES.QuestPage.CategoryHolder.Daily
+VirtualInputManager:SendMouseButtonEvent(H.AbsolutePosition.X+40, H.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(H.AbsolutePosition.X+40, H.AbsolutePosition.Y+40, 0, false, game, 0);
+wait(.7)
+for i = 5,1 do
+wait(1)
+VirtualInputManager:SendMouseButtonEvent(300, 220, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(300, 220, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(305, 222, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(305, 222, 0, false, game, 0);
+end
+wait(.7)
+local W = game:GetService("Players").LocalPlayer.PlayerGui.PAGES.QuestPage.CategoryHolder.Weekly
+VirtualInputManager:SendMouseButtonEvent(W.AbsolutePosition.X+40, W.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(W.AbsolutePosition.X+40, W.AbsolutePosition.Y+40, 0, false, game, 0);
+wait(1)
+for i = 5,1 do
+wait(1)
+VirtualInputManager:SendMouseButtonEvent(300, 220, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(300, 220, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(305, 222, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(305, 222, 0, false, game, 0);
+end
+wait(.7)
+local R = game:GetService("Players").LocalPlayer.PlayerGui.PAGES.QuestPage.CategoryHolder.Infinite
+VirtualInputManager:SendMouseButtonEvent(R.AbsolutePosition.X+40, R.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(R.AbsolutePosition.X+40, R.AbsolutePosition.Y+40, 0, false, game, 0);
+wait(1)
+for i = 5,1 do
+wait(1)
+VirtualInputManager:SendMouseButtonEvent(300, 220, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(300, 220, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(305, 222, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(305, 222, 0, false, game, 0);
+end
+wait(.7)
+end
 wait(.1)
 repeat
 local rand = math.random(1,6)
