@@ -42,9 +42,9 @@ game:GetService("CoreGui").ExperienceChat:Remove()
 end
 wait()
 local VirtualInputManager = game:GetService('VirtualInputManager')
-game.Players.LocalPlayer.PlayerGui:WaitForChild("HUD",20)
-game.Players.LocalPlayer.PlayerGui.HUD:WaitForChild("MobileHolderRight",20)
-game.Players.LocalPlayer.PlayerGui.HUD.MobileHolderRight:WaitForChild("QuestButtonHolder",20)
+game.Players.LocalPlayer.PlayerGui:WaitForChild("HUD",30)
+game.Players.LocalPlayer.PlayerGui.HUD:WaitForChild("MobileHolderRight",30)
+repeat wait() until game.Players.LocalPlayer.PlayerGui.HUD.MobileHolderRight:FindFirstChild"QuestButtonHolder"
 repeat wait() until game:GetService("Players").LocalPlayer.PlayerGui.HUD.MobileHolderRight.QuestButtonHolder.QuestButton:GetChildren()[4] ~= nil
 if game:GetService("Players").LocalPlayer.PlayerGui.HUD.MobileHolderRight.QuestButtonHolder.QuestButton.CompletedIndicatorLabel.Visible == true then
 VirtualInputManager:SendMouseButtonEvent(95, 85, 0, true, game, 0);
