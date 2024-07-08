@@ -173,6 +173,9 @@ VirtualInputManager:SendMouseButtonEvent(800, 360, 0, false, game, 0);
 wait()
 VirtualInputManager:SendMouseButtonEvent(800, 370, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(800, 370, 0, false, game, 0);
+wait(1)
+VirtualInputManager:SendMouseButtonEvent(800, 370, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(800, 370, 0, false, game, 0);
 wait(50)
 game:GetService('TeleportService'):Teleport(17017769292 , game.Players.LocalPlayer)
 else
