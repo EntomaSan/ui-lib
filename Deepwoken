@@ -29,6 +29,9 @@ game.Players.LocalPlayer.PlayerGui.PAGES:WaitForChild("MatchPage",20)
 game.Workspace:WaitForChild("SubStuff_DONT_DELETE",20)
 game:GetService("Workspace")["SubStuff_DONT_DELETE"]:WaitForChild("StoryPods",20)
 wait(.5)
+if game.Players:GetChildren()[2] ~= nil then
+game:Shutdown()
+end
 local VirtualInputManager = game:GetService('VirtualInputManager')
 VirtualInputManager:SendKeyEvent(true,Enum.KeyCode.Tab,false,game);
 VirtualInputManager:SendKeyEvent(false,Enum.KeyCode.Tab,false,game);
